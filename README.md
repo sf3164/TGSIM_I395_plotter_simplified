@@ -19,7 +19,8 @@ This is a simplified python GUI-based tool for plotting **vehicle trajectories**
 ## Example Output
 
 The tool produces an HTML file (`I395_Simplified_Plot.html`) displaying the interactive plot.
-![image](https://github.com/user-attachments/assets/a52d7376-5ed1-4351-ae1c-c324dfaed0f6)
+![image](https://github.com/user-attachments/assets/163f6f26-9fab-456e-89cf-d6de5958de53)
+
 
 
 ## File Structure
@@ -54,10 +55,9 @@ pip install pandas plotly matplotlib
 
 ## How to Use
 
-1. Download the TGSIM I395 main dataset and the boundaries files from the following website:
-https://data.transportation.gov/Automobiles/Third-Generation-Simulation-Data-TGSIM-I-395-Traje/97n2-kuqi/about_data
-2. Rename the main dataset to TGSIM_Stationary.csv and move it to the same directory as the `plotter.py` script.
-3. In the same directory as `plotter.py`, create a new folder named `boundaries`, and move all the centerline files into this folder.
+1. Use the updated TGSIM I395 maindatasets and the boundary file in this repo.
+2. Make sure the updated main dataset TGSIM_I395.csv is in the same directory as the plotter.py script.
+3. Make sure the folder boundaries contains the updated boundary file, and is in the same directory as plotter.py
 4. Launch the Python to run `plotter.py` and run all cells.
 5. A GUI window will appear.
 6. Enter one or more vehicle IDs (comma-separated).
@@ -69,7 +69,7 @@ The plot will open in a browser window and also be saved as `I395_Simplified_Plo
 
 ## Notes
 
-- Centerline CSVs must be named in the format:  
+- Boundary CSVs must be named in the format:  
   `I395_boundaries.csv`
 - These files must be placed in the `boundaries/` directory relative to the notebook.
 - The code currently writes to a fixed output file (`I395_Simplified_plot.html`) — feel free to modify this for custom output names.
